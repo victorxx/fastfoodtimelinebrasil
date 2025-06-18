@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loja Elegante - Produtos em Destaque</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 30px;
+      color: #0077cc;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      max-width: 720px;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .slide {
+      display: none;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .slide.active {
+      display: block;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .slide img {
+      max-width: 100%;
+      max-height: 320px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      object-fit: cover;
+    }
+
+    .slide img:hover {
+      transform: scale(1.05);
+    }
+
+    .slide h2 {
+      margin: 20px 0 10px;
+      font-size: 1.9rem;
+      color: #004a99;
+    }
+
+    .slide p {
+      color: #555;
+      font-size: 1.05rem;
+      line-height: 1.5;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Botões anterior e próximo */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      user-select: none;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: #005fa3;
+    }
+
+    .prev {
+      left: 15px;
+    }
+
+    .next {
+      right: 15px;
+    }
+
+    /* Dots de navegação */
+    .dots {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .dot {
+      height: 14px;
+      width: 14px;
+      margin: 0 8px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .dot.active, .dot:hover {
+      background-color: #0077cc;
+    }
+
+    /* Responsividade */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .slide h2 {
+        font-size: 1.4rem;
+      }
+      .slide p {
+        font-size: 1rem;
+      }
+      .prev, .next {
+        width: 38px;
+        height: 38px;
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Produtos em Destaque</h1>
+
+  <div class="slideshow-container">
+
+    <div class="slide active">
+      <a href="https://central.dokehost.com.br/aff.php?aff=90">
+      <img src="produto.jpeg" alt="Relógio Moderno" />
+      <h2>MÁQUINAS VPS TEMOS TODAS AS OPÇÕES DE MÁQINAS PARA VOCÊ</h2>
+      <p>vps melhor custo!.</p>
+    </div>
+  </a>
+
+    <div class="slide">
+      <a href="https://central.dokehost.com.br/aff.php?aff=90">
+
+        <img src="produto.jpeg" alt="Fones de Ouvido Wireless" />
+      <h2>vps o melhor custo</h2>
+      <p>MÁQUINAS VPS TEMOS TODAS AS OPÇÕES DE MÁQINAS PARA VOCÊ</p>
+    </div>
+      </a>
+
+
+
+         <div class="slide">
+      <a href="https://central.dokehost.com.br/aff.php?aff=90">
+
+        <img src="produto.jpeg" alt="Fones de Ouvido Wireless" />
+      <h2>vps o melhor custo</h2>
+      <p>MÁQUINAS VPS TEMOS TODAS AS OPÇÕES DE MÁQINAS PARA VOCÊ</p>
+    </div>
+      </a>
+
+
+
+
+      
+
+         <div class="slide">
+      <a href="https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g">
+
+        <img src="produto.jpeg" alt="Fones de Ouvido Wireless" />
+      <h2>Comece no Airbnb hoje mesmo</h2>
+      <p></p>
+    </div>
+      </a>
+      
+
+
+      
+         <div class="slide">
+      <a href="https://hostinger.com.br/?REFERRALCODE=1VICTOR444">
+
+        <img src="produto.jpeg" alt="Fones de Ouvido Wireless" />
+      <h2>Crie seu site agora mesmo não perca tempo</h2>
+      <p></p>
+    </div>
+      </a>
+
+
+       <div class="slide">
+      <a href="https://brasilbrasileiross.blogspot.com/">
+
+        <img src="produto.jpeg" alt="Fones de Ouvido Wireless" />
+      <h2>A VOZ DO BRASIL</h2>
+      <p></p>
+    </div>
+      </a>
+      
+
+
+      <div class="slide">
+      <a href="https://linharesesd.blogspot.com/">
+
+        <img src="produto.jpeg" alt="Fones de Ouvido Wireless" />
+      <h2>O PORTAL DE LINHARES ES</h2>
+      <p></p>
+    </div>
+      </a>
+      
+
+      <div class="slide">
+      <a href="https://recomendadodia23.blogspot.com/">
+
+        <img src="produto.jpeg" alt="Fones de Ouvido Wireless" />
+      <h2>RECOMENDAÇÃO DO DIA</h2>
+      <p></p>
+    </div>
+      </a>
+      
+      
+
+
+
+    <!-- Controles -->
+    <button class="prev" aria-label="Slide anterior">&#10094;</button>
+    <button class="next" aria-label="Próximo slide">&#10095;</button>
+
+  </div>
+
+  <div class="dots" aria-label="Indicadores de slide">
+    <span class="dot active" tabindex="0" aria-label="Slide 1"></span>
+    <span class="dot" tabindex="0" aria-label="Slide 2"></span>
+    <span class="dot" tabindex="0" aria-label="Slide 3"></span>
+    <span class="dot" tabindex="0" aria-label="Slide 4"></span>
+    <span class="dot" tabindex="0" aria-label="Slide 5"></span>
+    <span class="dot" tabindex="0" aria-label="Slide 6"></span>
+    <span class="dot" tabindex="0" aria-label="Slide 7"></span>
+ 
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
+
+      slides.forEach(s => s.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
+
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+      currentIndex = index;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      showSlide(currentIndex - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      showSlide(currentIndex + 1);
+    });
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', () => showSlide(idx));
+      dot.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          showSlide(idx);
+        }
+      });
+    });
+
+    // Auto-slide a cada 6 segundos
+    setInterval(() => {
+      showSlide(currentIndex + 1);
+    }, 6000);
+  </script>
+</body>
+</html>
